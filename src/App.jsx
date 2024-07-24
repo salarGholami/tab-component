@@ -20,10 +20,10 @@ const tabData = [
 ];
 
 function App() {
-  const activeTab = 3;
+  const [activeTab,setActiveTab] = useState(1);
 
   const handleActiveTab = (id) => {
-    console.log("clicked !", id);
+    setActiveTab(id)
   };
 
   return (
